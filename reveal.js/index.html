@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Where is the Trust?</title>
+
+		<meta name="description" content="A discussion of trust on the Internet">
+		<meta name="author" content="Trevor Rosen, Tod Beardsley">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+        <section>
+          <h1>Trust Issues in Networking</h1>
+          <h3>Making sense of the decisions you're making</h3>
+          <h4>Trevor Rosen (@trevrosen)</h4>
+          <h4>Tod Beardsley (@todb)</h4>
+          <h4>egypt (@egyp7)</h4>
+          <h5>(sponsored by @rapid7)</h5>
+        </section>
+
+        <section>
+          <h1>Trust</h1>
+        </section>
+
+        <section>
+          <section>
+            <h1>Trust In (Meatspace) Society</h1>
+          </section>
+
+          <section>
+            <h2>Social Theory</h2>
+            <ul>
+              <li>morality</li>
+              <li>reputation</li>
+              <li>cooperation</li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>People have been thinking about this </br> stuff a long time</h3>
+            <img src="/images/kant.jpg" alt="Kant"/>
+            <img src="/images/locke.jpg" alt="Locke"/>
+            <img src="/images/rousseau.jpg" alt="Kant"/>
+          </section>
+
+          <section>
+            <blockquote>
+              Act in such a way that you treat humanity, whether in your own person or in the person of any other, never merely as a means to an end, but always at the same time as an end.
+            </blockquote>
+              (- Immanuel Kant, Grounding for the Metaphysics of Morals)
+          </section>
+
+          <section>
+            <h2>Motivations and Morals</h2>
+            <ul>
+              <li>political philosophy studies the roots of societal interactions</li>
+              <li>psychology tells us about the individual's motivations</li>
+              <li>sociology studies collective human behavior</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Their conclusions?</h2>
+          </section>
+
+          <section>
+            <h2>Humans are incentivized to behave</h2>
+            <h3>These incentives form the basis of societal pressures codified in law:</h3>
+            <ul>
+              <li>morality</li>
+              <li>reputation</li>
+              <li>cooperation</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Is that it?</h2>
+          </section>
+
+          <section>
+            <h1>NO</h1>
+            <h2>Game theory has a lot to say about this too</h2>
+          </section>
+
+          <section>
+            <h3>We can do experiments</h3>
+            <p>And we now know that at a certain point, someone will defect</p>
+          </section>
+
+          <section>
+            <h2>What is defection?</h2>
+            <p>Basically it's when a human actor decides to act against collective interest and in favor of individual interest</p>
+          </section>
+
+          <section>
+            <h2>So what?</h2>
+          </section>
+
+          <section>
+            <h2>On the Internet, defection happens quickly</h2>
+            <ul>
+              <li>Social contract doesn't exist</li>
+              <li>Meatspace constraints on behavior don't exist</li>
+              <li>There are no real consequences for acting like a sociopath</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Sociopath?</h2>
+          </section>
+
+          <section>
+            <h3>Here are some indicators</h3>
+             <ol>
+               <li>failure to conform to social norms with respect to lawful behaviors</li>
+               <li>deception, as indicated by repeatedly lying, use of aliases, or conning others for personal profit or pleasure;</li>
+               <li>impulsivity or failure to plan ahead;</li>
+               <li>irritability and aggressiveness</li>
+               <li>consistent irresponsibility</li>
+               <li>lack of remorse</li>
+             </ol>
+             </br>
+             </br>
+             <small><a href="http://en.wikipedia.org/wiki/Antisocial_personality_disorder#DSM-IV-TR">http://en.wikipedia.org/wiki/Antisocial_personality_disorder#DSM-IV-TR</a></small>
+          </section>
+
+          <section>
+            <h3>Sound like anyone you know?</h3>
+          </section>
+
+          <section>
+            <h3>The Internet is full of thieves, trolls and perverts</h3>
+          </section>
+
+          <section>
+            <h3>"Some men just want to watch the world burn"</h3>
+            <img src="/images/joker-1.jpg" alt="Dark Knight - Joker"/>
+          </section>
+        </section>
+
+        <!-- END section of societal explanation -->
+
+        <!-- BEGIN section of Internet trust -->
+        <section>
+          <section>
+            <h2>Without a social contract, how do we avoid trust on the Internet?</h2>
+          </section>
+
+          <section>
+            <h1>You can't</h1>
+              <p>You will never have total control over your societal environment on the Internet - same as in Real Life</p>
+          </section>
+
+          <section>
+            <h2>At some point, trust is inevitable</h2>
+          </section>
+
+          <section>
+            <h2>But you shouldn't trust more than you need to</h2>
+          </section>
+
+          <section>
+            <h2>People find this idea depressing sometimes</h2>
+              <p>Because they make the mistake of equating the Internet with human society we encounter IRL</p>
+          </section>
+
+          <section>
+            <h2>But they shouldn't</h2>
+            <p>The Internet is not the same as Meatspace society and can't be treated as such</p>
+          </section>
+
+          <section>
+            <h2>What are our tools in a diminished-trust environment?</h2>
+            <ul>
+              <li>Encryption</li>
+              <li>Authentication</li>
+              <li>Vigilance</li>
+              <li>Faith</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Yeah, faith</h2>
+            <p>At a certain point, you have no choice but to depend on others - even on the Internet.</p>
+            <aside class="notes">
+              <p>In Meatspace, you might go to a movie, trusting that you won't be shot. People have been shot at the movies before, but you have faith that it will be safe for you.</p>
+              <p>There are times when similar inevitable trust calculations are made on the Internet</p>
+            </aside>
+          </section>
+
+          <section>
+            <h2>But you are probably trusting more things than you think</h2>
+          </section>
+
+          <section>
+            <h2>Demo: all the trust involved from wifi join to https load</h2>
+          </section>
+
+        </section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
