@@ -293,11 +293,158 @@
           <section>
             <h1>DEEP DIVE: DHCP</h1>
           </section>
+
           <section>
             <h2>Dynamic Host Configuration Protocol</h2>
             <p>You need it to get an IP address</p>
             <p>You need it to learn about the network</p>
           </section>
+
+          <section>
+            <h2>The first two seconds</h2>
+            <img src="../reveal.js/images/attwifi-00-dhcp-overview.png" alt="Wireshark PCAP"/>
+          </section>
+
+          <section>
+            <h2>DHCP DISCOVER: Where's DHCP at?</h2>
+            <img src="../reveal.js/images/attwifi-01-dhcp-discover.png" alt="Wireshark PCAP"/>
+          </section>
+
+          <section>
+            <h2>The Broadcast Address</h2>
+            <img src="../reveal.js/images/attwifi-02-dhcp.png" alt="Wireshark PCAP"/>
+          </section>
+
+          <section>
+            <h2>Suddenly, an ARP!</h2>
+            <img src="../reveal.js/images/attwifi-03-arp-from-wap.png" alt="Wireshark PCAP"/>
+          </section>
+
+          <section>
+            <h3>About ARP</h3>
+            <p>It's the Address Resolution Protocol</p>
+            <p>It's how computers learn who's who, near by.</p>
+            <p>It's entirely faith based. More on that later.</p>
+          </section>
+
+          <section>
+            <h2>The DHCP OFFER</h2>
+            <img src="../reveal.js/images/attwifi-04-dhcp-offer.png" alt="Wireshark PCAP"/>
+          </section>
+
+          <section>
+            <h2>Here's your IP address!</h2>
+            <img src="../reveal.js/images/attwifi-05-dhcp-offer-ipaddr.png" alt="Wireshark PCAP"/>
+          </section>
+
+          <section>
+            <h2>Other things you need</h2>
+            <img src="../reveal.js/images/attwifi-06-dhcp-offer-options-1.png" alt="Wireshark PCAP"/>
+          </section>
+
+          <section>
+            <h2>The Subnet</h2>
+            <p>Lets you know what's local</p>
+            <p>If your buddy is local, use ARP.</p>
+          </section>
+
+          <section>
+            <h2>How to talk to the world</h2>
+            <img src="../reveal.js/images/attwifi-06-dhcp-offer-options-2.png" alt="Wireshark PCAP"/>
+          </section>
+
+          <section>
+            <h2>Routing</h2>
+            <p>If your buddy is remote, you need the router.</p>
+            <p>If you don't know an IP address, you need DNS.</p>
+          </section>
+
+          <section>
+            <h2>The DHCP REQUEST</h2>
+            <img src="../reveal.js/images/attwifi-07-dhcp-request.png" alt="Wireshark PCAP"/>
+          </section>
+
+          <section>
+            <h3>Yeah, what you said.</h3>
+          </section>
+
+          <section>
+            <h2>Still Broadcasting</h2>
+            <img src="../reveal.js/images/attwifi-08-dhcp-request-broadcast.png" alt="Wireshark PCAP"/>
+          </section>
+
+          <section>
+            <h2>The DHCP ACK: Roger that</h2>
+            <img src="../reveal.js/images/attwifi-09-dhcp-ack.png" alt="Wireshark PCAP"/>
+          </section>
+
+          <section>
+            <h2>Now you can talk to the world</h2>
+            <img src="../reveal.js/images/attwifi-09-dhcp-ack-yay-router-and-dns.png" alt="Wireshark PCAP"/>
+          </section>
+
+          <section>
+            <h2>This all took about 1 1/2 seconds</h2>
+            <img src="../reveal.js/images/attwifi-10-dhcp-roundtrip.png" alt="Wireshark PCAP"/>
+          </section>
+
+          <section>
+            <h2>So what?</h2>
+            <p>On other networks, it's about 300 milliseconds</p>
+            <img src="../reveal.js/images/attwifi-11-dhcp-roundtrip-compare-twcwifi.png" alt="Wireshark PCAP"/>
+          </section>
+
+          <section>
+            <h2>Race conditions</h2>
+            <p>What if a bad guy pretends to be DHCP?</p>
+            <p>How can you tell?</p>
+          </section>
+
+          <section>
+            <img src="../reveal.js/images/GeorgeMichaelFaithAlbumcover.jpg" alt="You gotta have faith-a, faith-a, faith."/>
+          </section>
+
+          <section>
+            <h2>My first ARP</h2>
+            <img src="../reveal.js/images/attwifi-12-arp.png" alt="Wireshark PCAP"/>
+          </section>
+
+          <section>
+            <h3>More about ARP</h3>
+            <p>This is all based on MAC (Media Access Control) addresses</p>
+            <p>...which aren't signed or verified</p>
+            <p>...which sometimes can be overwritten</p>
+            <p>...which sometimes happen gratuitously</p>
+          </section>
+
+          <section>
+            <img src="../reveal.js/images/GeorgeMichaelFaithAlbumcover.jpg" alt="You gotta have faith-a, faith-a, faith."/>
+          </section>
+
+          <section>
+            <h2>Implementing ARP security</h2>
+            <img src="../reveal.js/images/attwifi-13-arp-security-lol.png" alt="Wireshark PCAP"/>
+          </section>
+
+          <section>
+            <h2>This is all local</h2>
+            <img src="../reveal.js/images/attwifi-99-tweet.png" alt="Wireshark PCAP"/>
+          </section>
+
+          <section>
+            <h2>This is all shady</h2>
+            <p>It's fun, but antisocial.</p>
+            <p>How often is this a problem?</p>
+            <p>Maybe easier to watch your keystrokes?</p>
+          </section>
+
+          <section>
+            <h2>Reasonable Defenses</h2>
+            <p>Avoid open wireless</p>
+            <p>Never automatically connect to anything?</p>
+            <p>Use a VPN provider.</p>
+          </section>
+
         </section>
 
         <section>
