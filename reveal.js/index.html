@@ -165,6 +165,10 @@
           </section>
 
           <section>
+            <h3>It's useless to try to understand these people or deal with them as you would in Meatspace</h3>
+          </section>
+
+          <section>
             <h3>"Some men just want to watch the world burn"</h3>
             <img src="/images/joker-1.jpg" alt="Dark Knight - Joker"/>
           </section>
@@ -183,7 +187,7 @@
 
           <section>
             <h1>We don't</h1>
-              <p>We will never have total control over your societal environment on the Internet - same as in Real Life</p>
+              <p>We will never have total control over our societal environment on the Internet - same as in Real Life</p>
           </section>
 
           <section>
@@ -252,10 +256,143 @@
             <h1>Selling Trust</h1>
           </section>
           <section>
-            <h2>This is your real business as a software developer</h2>
+            <h2>Trust is your metaproduct as a software developer</h2>
           </section>
+          <section>
+            <h3>In some cases, we are literally<br/> dealing with life and death</h3>
+            <ul>
+              <li>medical devices</li>
+              <li>car/train/plane firmware</li>
+              <li>Industrial Control Systems(controlling powerplants, factories, pipelines, etc)</li>
+            </ul>
+          </section>
+          <section>
+            <h2>But no matter what you get paid for, you are selling trust</h2>
+          </section>
+          <section>
+            <h3>We are all charged with the stewardship of data:</h3>
+            <ul>
+              <li>privacy</li>
+              <li>accuracy</li>
+              <li>security</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Things we can control,<br /> things we must advocate for</h2>
+          </section>
+          <section>
+            <h2>Under our control</h2>
+            <ul>
+              <li>where JS libraries come from</li>
+              <li>whether we encrypt the transport layer</li>
+              <li>whether we look for problems in our code</li>
+            </ul>
+            <aside class="notes">
+              <ul>
+                <li>Hard to think of places where SSL *shouldn't* be</li>
+                <li>Static analysis tools can help with this. Breakman is free. CodeClimate is worth it.</li>
+              </ul>
+            </aside>
+          </section>
+          <section>
+            <h3>Hotlinking JS libraries</h3>
+            <pre>
+            <code>&lt;script src='http://code.jquery.com/jquery-2.1.1.js' /&gt; </code>
+            </pre>
+            <aside class='notes'>
+              <ul>
+                <li>ASK AUDIENCE: how many of you work on web apps and do this kind of thing?</li>
+                <li>Hotlinking JS libraries can be risky. Doing it without SSL is irresponsible. jquery gets pwned and you're in bad shape</li>
+                <li>jQuery has been pwned before for this exact reason. Literally thousands of sites could have backdoors injected this way</li>
+                <li>Kinda bad to do this at all, but if you're going to, at least use SSL to get it</li>
+              </ul>
+            </aside>
+          </section>
+          <section>
+            <h3>Consider SSL everywhere</h3>
+            <aside class="notes">
+              <ul>
+                <li>ASK AUDIENCE: What are some places where SSL *isn't* appropriate?</li>
+              </ul>
+            </aside>
+          </section>
+
+          <section>
+            <h3>Use a static analysis tool</h3>
+            <p>Brakeman(<a href="http://brakemanscanner.org">brakemanscanner.org</a>) is a good one for Rails</p>
+            <aside class="notes">
+              <ul>
+                <li>ASK AUDIENCE: how many of you use something like this in Rails now?</li>
+                <li>There's really no excuse</li>
+                <li>Easy to set up in a CI step (with Jenkins)</li>
+                <li>If you have the $$, CodeClimate does it for you</li>
+              </ul>
+            </aside>
+          </section>
+
+          <section>
+            <h2>Requiring our Advocacy</h2>
+          </section>
+          <section>
+            <h3>OpenSSL</h3>
+            <ul>
+              <li>be aware of what you are using</li>
+              <li>gain some understanding of ciphers, encryption handshakes, etc</li>
+              <li>realize that OpenSSL is pretty strange and fragile, despite its ubiquity</li>
+            </ul>
+            <aside class='notes'>
+              <ul>
+                <li>I would wager no one in this room is qualified to commit on OpenSSL. I'm certainly not</li>
+                <li>this stuff is extremely hard</li>
+                <li>What encryption suites you are using/supporting matter quite a bit</li>
+                <li>What version of SSL/TLS you are using is important</li>
+              </ul>
+            </aside>
+          </section>
+
+          <section>
+            <h3>Package Managers Should Make Signing Painless (RubyGems)</h3>
+            <img src="/images/rubygems.jpg" alt=""/>
+            <aside class='notes'>
+            <ul>
+              <li>it's not easy to do this</li>
+              <li>it could be easier</li>
+              <li>on RubyRogues, [TK name] said that making this easier is not really a priority due to lack of expertise</li>
+            </ul>
+            </aside>
+          </section>
+          <section>
+            <h3>Package Managers Should Give a Sh*t At All (NPM)</h3>
+            <ul>
+              <li>NPM doesn't even offer a *checksum* of its tarball, much less a signed binary</li>
+              <li>NPM installs over HTTP - not over SSL.</li>
+              <li>This is easy to fix. WTF, NPM?</li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>No biggie tho, NPM just installs everything</h3>
+            <aside class='notes'>
+              <ul>
+                <li>Just doing this talk required me installing the socket.io package - what could go wrong?</li>
+                <li>People relying on a Grunt file and just 'npm install' are trusting too many</li>
+              </ul>
+            </aside>
+          </section>
+
         </section>
         <!-- END section of developer trust -->
+        <section>
+          <section>
+            <h2>Conclusions</h2>
+          </section>
+          <section>
+            <h3>Don't think of security as 'what to be afraid of'</h3>
+          </section>
+          <section>
+            <h3>Think of it as 'how to sell a better trust product'</h3>
+          </section>
+        </section>
 
 			</div>
 
