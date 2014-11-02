@@ -5,7 +5,7 @@
 ### presenters
 * [Trevor Rosen](https://twitter.com/trevrosen)
 * [Tod Beardsley](https://twitter.com/todb)
-* [egypt](https://twitter.com/egy7)
+* [egypt](https://twitter.com/egyp7)
 
 ### What do we trust on the Internet?
 All of our interactions online are predicated on some form of trust -
