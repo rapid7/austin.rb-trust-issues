@@ -58,6 +58,24 @@ connection.
    through the remote machine. Keep any relevant bandwidth agreements in
    mind
 
+#### Learn you some nmap and ncat/socat
+
+nmap and its cousin ncat (netcat) can do all kinds of things. nmap is
+used to enumerate hosts and their services. ncat (netcat) and its more
+powerful cousin socat, are used to make arbitrary network connections or
+more generically, to move data around on different kinds of named pipes.
+
+**Installing (nmap comes with ncat)**
+
+* OSX: ```brew install nmap socat```
+* Ubuntu: ```sudo apt-get install nmap socat```
+
+
+* [ncat tricks](http://nmap.org/ncat/guide/ncat-tricks.html) - pipe data
+  around, make ad-hoc servers, listen to traffic on hosts, etc
+* [practical nmap usage](http://www.tecmint.com/nmap-command-examples/)
+  - scan one or more hosts, use varying levels of probe, etc
+
 
 ### Credits
 * ["Liars and Outliers: Enabling the Trust that Society Needs to Thrive"](http://www.amazon.com/Liars-Outliers-Enabling-Society-Thrive-ebook/dp/B006ORT3KG/]) this talk owes a good deal to some insights from Bruce Schneier in his most recent layman-oriented security book. This book does a great job of placing the trust notion into the broader context of government and commerce, and talking about the ways that technology is altering the trust framework.
