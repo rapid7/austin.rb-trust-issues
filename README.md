@@ -77,8 +77,14 @@ more generically, to move data around on different kinds of named pipes.
 - scan one or more hosts, use varying levels of probe, etc
 
 
-### Credits
+### Credits and Resources
+* [SSL and the Future of Authenticity](http://www.youtube.com/watch?v=Z7Wl2FW2TcA) A great talk by renowned security researcher Moxie Marlinspike given at BlackHat 2011, this presentation discusses the fundamental brokenness of the SSL Certificate Authority (CA) paradigm and presents an alternative for authenticating on the Internet. The presentation includes some interesting discussion of the historical reason for the CA implementation and how it was never really seen as a permanent solution to the problem of [Man-in-the-middle attacks](http://en.wikipedia.org/wiki/Man-in-the-middle_attack)
+
 * ["Liars and Outliers: Enabling the Trust that Society Needs to Thrive"](http://www.amazon.com/Liars-Outliers-Enabling-Society-Thrive-ebook/dp/B006ORT3KG/]) this talk owes a good deal to some insights from Bruce Schneier in his most recent layman-oriented security book. This book does a great job of placing the trust notion into the broader context of government and commerce, and talking about the ways that technology is altering the trust framework.
+
+* ["Cryptography Engineering: Principles and Practical Applications"](http://www.amazon.com/Cryptography-Engineering-Principles-Practical-Applications/dp/0470474246/) for those wanting a resource for a deep technical dive into the implementation of cryptographic systems, this book co-authored by Bruce Schneier is essential.
+
+* ["TCP/IP Illustrated"](http://www.amazon.com/TCP-Illustrated-Volume-Addison-Wesley-Professional/dp/0321336313/) *the* book on pretty much everything to do with TCP/IP networking and the protocols built on top of them. Every protocol in this talk gets an exhaustive explanatory treatment in this book. If you buy one book to use as a reference for how networking actually functions, this should be it.
 
 
 
