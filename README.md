@@ -60,7 +60,7 @@ connection.
 
 #### Learn you some nmap and ncat/socat
 
-nmap and its cousin ncat (netcat) can do all kinds of things. nmap is
+nmap and its friend ncat (netcat) can do all kinds of things. nmap is
 used to enumerate hosts and their services. ncat (netcat) and its more
 powerful cousin socat, are used to make arbitrary network connections or
 more generically, to move data around on different kinds of named pipes.
@@ -74,7 +74,7 @@ more generically, to move data around on different kinds of named pipes.
 * [ncat tricks](http://nmap.org/ncat/guide/ncat-tricks.html) - pipe data
   around, make ad-hoc servers, listen to traffic on hosts, etc
 * [practical nmap usage](http://www.tecmint.com/nmap-command-examples/)
-  - scan one or more hosts, use varying levels of probe, etc
+- scan one or more hosts, use varying levels of probe, etc
 
 
 ### Credits
