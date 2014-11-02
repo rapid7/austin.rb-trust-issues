@@ -3,8 +3,9 @@
 ## A Presentation to Austin.RB by @Rapid7 folks
 
 ### presenters
-* [Tod Beardsley](https://twitter.com/todb)
 * [Trevor Rosen](https://twitter.com/trevrosen)
+* [Tod Beardsley](https://twitter.com/todb)
+* [egypt](https://twitter.com/egy7)
 
 ### What do we trust on the Internet?
 All of our interactions online are predicated on some form of trust -
@@ -24,6 +25,8 @@ This presentation will seek to answer these questions, putting our trust
 environment online into a technical and philisophical context that can
 be used to empower developers to create solid products without falling
 into paranoia.
+
+<hr />
 
 
 ### Tricks/Tips
