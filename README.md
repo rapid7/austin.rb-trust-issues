@@ -89,6 +89,5 @@ more generically, to move data around on different kinds of named pipes.
 
 * ["TCP/IP Illustrated"](http://www.amazon.com/TCP-Illustrated-Volume-Addison-Wesley-Professional/dp/0321336313/) *the* book on pretty much everything to do with TCP/IP networking and the protocols built on top of them. Every protocol in this talk gets an exhaustive explanatory treatment in this book. If you buy one book to use as a reference for how networking actually functions, this should be it.
 
-* ["The Smart Girl's Guide to Privacy"](http://www.amazon.com/The-Smart-Girls-Guide-Privacy-ebook/dp/B00JBV3C6S) this is a *very* approachable book on the issues of privacy, specifically for women who don't have a lot of background in security.  Covers basic online profile management, password management, reputation management, and the specific challenges facing female-bodied and female-gendered Internet users when facing sociopathic-acting adversaries.
-
+* ["The Smart Girl's Guide to Privacy"](http://www.amazon.com/The-Smart-Girls-Guide-Privacy-ebook/dp/B00JBV3C6S) this is a *very* approachable book on the issues of privacy, specifically for women who don't have a lot of background in security.  Covers basic online profile management, password management, reputation management, and the specific challenges facing female-bodied and female-gendered Internet users when facing sociopathic-acting adversaries. (Warning, the "Also bought" section for this Amazon listing may be NSFW for your place of employment).
 
