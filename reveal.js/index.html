@@ -363,15 +363,27 @@
           </section>
 
           <section>
-            <h2>Suddenly, an ARP!</h2>
+            <h2>Detour: Suddenly, an ARP!</h2>
             <img src="/images/attwifi-03-arp-from-wap.png" alt="Wireshark PCAP"/>
           </section>
 
           <section>
             <h3>About ARP</h3>
             <p>It's the Address Resolution Protocol</p>
-            <p>It's how computers learn who's who, near by.</p>
-            <p>It's entirely faith based. More on that later.</p>
+            <p>It's how computers learn who's who, nearby.</p>
+            <p>It's entirely faith based.</p>
+          </section>
+
+          <section>
+            <h3>More about ARP</h3>
+            <p>This is all based on MAC (Media Access Control) addresses</p>
+            <p>...which aren't signed or verified</p>
+            <p>...which sometimes can be overwritten</p>
+            <p>...which sometimes happen gratuitously</p>
+          </section>
+
+          <section>
+            <h2>Ok! Back to DHCP</h2>
           </section>
 
           <section>
@@ -391,8 +403,8 @@
 
           <section>
             <h2>The Subnet</h2>
-            <p>Lets you know what's local</p>
-            <p>If your buddy is local, use ARP.</p>
+            <p>Lets you know what IP addresses are local.</p>
+            <p>If your buddy is local, use ARP to resolve.</p>
           </section>
 
           <section>
@@ -404,6 +416,7 @@
             <h2>Routing</h2>
             <p>If your buddy is remote, you need the router.</p>
             <p>If you don't know an IP address, you need DNS.</p>
+            <p>DNS: Domain Name System (Human-memorable names)</p>
           </section>
 
           <section>
@@ -418,6 +431,7 @@
           <section>
             <h2>Still Broadcasting</h2>
             <img src="/images/attwifi-08-dhcp-request-broadcast.png" alt="Wireshark PCAP"/>
+            <p> In fact, the entire DHCP exchange on this network is broadcast, which is weird.</p>
           </section>
 
           <section>
@@ -457,14 +471,6 @@
           </section>
 
           <section>
-            <h3>More about ARP</h3>
-            <p>This is all based on MAC (Media Access Control) addresses</p>
-            <p>...which aren't signed or verified</p>
-            <p>...which sometimes can be overwritten</p>
-            <p>...which sometimes happen gratuitously</p>
-          </section>
-
-          <section>
             <img src="/images/GeorgeMichaelFaithAlbumcover.jpg" alt="You gotta have faith-a, faith-a, faith."/>
           </section>
 
@@ -488,7 +494,8 @@
             <h2>Reasonable Defenses</h2>
             <p>Avoid open wireless</p>
             <p>Never automatically connect to anything?</p>
-            <p>Use a VPN provider.</p>
+            <p>Use a VPN provider if you're really worried.</p>
+            <p>Even if your names and routes are untrustworthy, we have a solution...</p>
           </section>
 
         </section>
