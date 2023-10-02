@@ -1,0 +1,15 @@
+---
+info:
+  title: Austin Rb Trust Issues
+  description: Materials presented by Rapid7 folk to the Nov/2014 Austin.rb meeting
+  x-cortex-git:
+    github:
+      alias: r7org
+      repository: rapid7/austin.rb-trust-issues
+  x-cortex-tag: austin-rb-trust-issues
+  x-cortex-type: service
+  x-cortex-domain-parents:
+  - tag: platform-delivery
+openapi: 3.0.1
+servers:
+- url: "/"
